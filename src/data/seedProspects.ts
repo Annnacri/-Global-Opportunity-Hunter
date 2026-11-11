@@ -1,0 +1,618 @@
+import { Prospect, CampaignCadence } from '../types/prospect';
+
+export const SEED_PROSPECTS: Prospect[] = [
+  {
+    id: 'prospect-emaar-dubai',
+    companyName: 'Emaar Hospitality Group (Address Hotels & Resorts)',
+    market: 'Dubai, UAE',
+    industry: 'Hotels and resorts',
+    pipelineStage: 'Contacted',
+    website: 'https://www.emaar.com/en/hospitality',
+    headquarters: 'Downtown Dubai, UAE',
+    businessSummary: 'Leading global luxury hospitality and leisure operator managing prestigious brands including Address Hotels + Resorts, Vida Hotels and Resorts, and Armani Hotel Dubai across the UAE, Egypt, and Saudi Arabia.',
+    potentialNeeds: [
+      'High inbound VIP request volume in Arabic, English, Russian, and Mandarin requiring instant 24/7 turnaround.',
+      'Direct booking conversion on mobile & WhatsApp to reduce OTA commissions (Expedia/Booking.com).',
+      'AI guest concierge for personalized dining, spa, and chauffeur booking across sprawling properties in Downtown Dubai & Dubai Marina.'
+    ],
+    publicContact: {
+      corporateEmail: 'enquiry@emaar.com',
+      phone: '+971 4 366 1688',
+      hqAddress: 'Emaar Square, Building 3, Downtown Dubai, UAE',
+      contactPageUrl: 'https://www.emaar.com/en/contact-us',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'Mark Kirby',
+      role: 'Head of Hospitality / Chief Operating Officer',
+      department: 'Executive Operations & Commercial Strategy',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Enterprise Sovereign Multilingual Concierge & Direct Booking Agent',
+      valueProposition: 'Private WhatsApp & Voice AI Concierge integrated with Opera PMS to handle VIP guest requests, upsells, and direct suite reservations in 14 languages with zero OTA commission.',
+      expectedRoi: 'Est. AED 450,000+ ($120k) annual savings on direct room booking fees per 5-star property.',
+      estimatedContractValue: '$4,500/month retainer + $25,000 setup across 4 flagship properties',
+    },
+    personalizedEmail: {
+      subject: 'Address Hotels: 45-Second WhatsApp VIP Concierge Prototype for Downtown Dubai',
+      personalizedHook: 'Observed your expansion across Dubai and the upcoming branded residences in the GCC.',
+      body: `Dear Mr. Kirby,\n\nCongratulations on the continuous accolades for Address Hotels & Resorts in Downtown Dubai and Dubai Marina.\n\nWith high-net-worth international guests demanding instantaneous, discreet service across Arabic, English, Mandarin, and Russian, we developed an autonomous VIP Concierge Agent tailored for ultra-luxury hospitality.\n\nOur system connects directly to your PMS to confirm private dining, cabana bookings, and direct room reservations on WhatsApp in under 45 seconds—saving up to 18% in OTA distribution leakages.\n\nWe built a 60-second interactive demonstration configured for Address Downtown. May I share the secure prototype link with your executive team for a quick 5-minute review?\n\nKind regards,\n[Executive Signature]\nAgent 03 B2B Acquisition Group`,
+      callToAction: 'Requesting permission to share a 60-second private prototype link with executive team.',
+    },
+    nextSalesAction: {
+      action: 'Stage personalized demonstration video link and submit for human executive authorization before dispatching to Head of Hospitality.',
+      targetDate: '2026-11-08',
+      urgency: 'High',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Initial value proposition email with tailored video demonstration link.',
+        templateSnippet: 'Address Hotels: 45-Second WhatsApp VIP Concierge Prototype for Downtown Dubai',
+      },
+      {
+        day: 4,
+        channel: 'Follow-up Email',
+        objective: 'Case study on eliminating 18% OTA leakage via direct WhatsApp checkout.',
+        subject: 'Quick follow-up: Address Hotels WhatsApp direct booking metric',
+        templateSnippet: 'Following up on our note regarding how luxury GCC operators recapture AED 38,000/month per 100 keys from OTAs...',
+      },
+      {
+        day: 8,
+        channel: 'LinkedIn',
+        objective: 'Executive connection to COO Mark Kirby referencing the demonstration.',
+        templateSnippet: 'Shared an autonomous concierge demo tailored for Address Hotels. Would welcome your feedback on guest communication priorities.',
+      }
+    ],
+    status: 'OUTREACH_STAGED',
+    fitScore: 96,
+    campaignTag: 'GCC Luxury Hospitality Inbound',
+    createdAt: '2026-11-06T09:00:00Z',
+    lastUpdated: '2026-11-06T09:30:00Z',
+  },
+  {
+    id: 'prospect-damac-realestate',
+    companyName: 'DAMAC Properties',
+    market: 'Dubai, UAE',
+    industry: 'Real estate',
+    pipelineStage: 'In Discussion',
+    website: 'https://www.damacproperties.com',
+    headquarters: 'Executive Heights, Barsha Heights, Dubai, UAE',
+    businessSummary: 'Leading luxury real estate developer in the Middle East, delivering iconic residential, commercial, and leisure properties across the UAE, Saudi Arabia, Qatar, Jordan, and the UK.',
+    potentialNeeds: [
+      'Massive global ad lead volume from Instagram, Google, and property portals requiring sub-60-second qualification.',
+      'High drop-off rate when leads are contacted outside UAE business hours by human brokers.',
+      'Automated qualification of investor net-worth, preferred payment plans, and Golden Visa eligibility.'
+    ],
+    publicContact: {
+      corporateEmail: 'customerrelations@damacgroup.com',
+      phone: '+971 4 373 8888',
+      hqAddress: 'DAMAC Executive Heights, Barsha Heights, Dubai, UAE',
+      contactPageUrl: 'https://www.damacproperties.com/en/contact-us/',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'Amira Sajwani',
+      role: 'Managing Director / Chief Sales & Commercial Officer',
+      department: 'Commercial Sales & Digital Strategy',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Autonomous Real Estate Lead Qualification & Booking Agent',
+      valueProposition: 'Instant conversational qualification on WhatsApp in 8 languages that validates buyer budget, timeline, and financing before automatically booking video walkthroughs into sales agents’ calendars.',
+      expectedRoi: '3.4x boost in international lead contact rate; eliminates cold leads for broker teams.',
+      estimatedContractValue: '$6,000/month retainer + $15,000 deployment fee',
+    },
+    personalizedEmail: {
+      subject: 'DAMAC International Leads: 30-Second WhatsApp Qualification & Golden Visa Filter',
+      personalizedHook: 'DAMAC Lagoons and Safa One international marketing campaigns generate immense cross-border buyer curiosity.',
+      body: `Dear Ms. Sajwani,\n\nDAMAC's global marketing presence for luxury residences is setting global standards.\n\nHowever, international property buyers in Europe, the UK, and Asia often submit inquiries at 11 PM Gulf Standard Time. If not contacted within 5 minutes, conversion likelihood drops dramatically.\n\nWe engineered an autonomous WhatsApp agent that responds in 28 seconds, qualifies buyer liquid capital and Golden Visa eligibility in their native language, and syncs high-intent buyers directly into Salesforce for your senior broker team.\n\nWould you be open to reviewing a 2-minute workflow blueprint demonstrating how this lifted lead qualification by 38% for high-ticket property developments?\n\nSincerely,\n[Executive Signature]\nAgent 03 B2B Team`,
+      callToAction: 'Propose a 2-minute architectural blueprint review.',
+    },
+    nextSalesAction: {
+      action: 'Submit draft email to human executive for sign-off, targeted at the Commercial Sales office in Dubai.',
+      targetDate: '2026-11-09',
+      urgency: 'Immediate',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Initial commercial email highlighting sub-60s lead conversion.',
+        templateSnippet: 'DAMAC International Leads: 30-Second WhatsApp Qualification & Golden Visa Filter',
+      },
+      {
+        day: 5,
+        channel: 'Follow-up Email',
+        objective: 'Share benchmark data on European investor qualification response times.',
+        subject: 'Data point: International lead response velocity for Dubai off-plan sales',
+        templateSnippet: 'Sharing a quick chart showing why responding in <3 minutes yields 21x higher appointment conversions...',
+      }
+    ],
+    status: 'OUTREACH_STAGED',
+    fitScore: 94,
+    campaignTag: 'GCC Real Estate AI Accelerator',
+    createdAt: '2026-11-06T09:15:00Z',
+    lastUpdated: '2026-11-06T09:40:00Z',
+  },
+  {
+    id: 'prospect-red-sea-saudi',
+    companyName: 'Red Sea Global (The Red Sea & AMAALA)',
+    market: 'Saudi Arabia',
+    industry: 'Tourism and hospitality',
+    pipelineStage: 'Research',
+    website: 'https://www.redseaglobal.com',
+    headquarters: 'Riyadh, Kingdom of Saudi Arabia',
+    businessSummary: 'The cornerstone mega-project developer behind Vision 2030, pioneering regenerative tourism across ultra-luxury resorts along Saudi Arabia’s pristine Red Sea coast and AMAALA wellness destination.',
+    potentialNeeds: [
+      'Pioneering smart resort guest experiences with zero paper and zero operational friction.',
+      'AI guest orchestrator for eco-tourism adventures, diving excursions, and private marine sanctuary permits.',
+      'Bespoke AI system compliant with Saudi National Data Management Office (NDMO) and PDPL privacy regulations.'
+    ],
+    publicContact: {
+      corporateEmail: 'info@redseaglobal.com',
+      phone: '+966 11 829 8888',
+      hqAddress: 'Al Raid Grove, Building 1, King Fahd Road, Riyadh, KSA',
+      contactPageUrl: 'https://www.redseaglobal.com/en/contact-us',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'John Pagano',
+      role: 'Group Chief Executive Officer / Commercial Directorate',
+      department: 'Executive Office & Innovation',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Regenerative Eco-Tourism Smart Guest Orchestration Agent',
+      valueProposition: 'Private on-premise / Sovereign Cloud AI Concierge coordinating personalized guest itineraries, environmental guidelines, and yacht/seaplane transfers with zero carbon footprint.',
+      expectedRoi: 'Seamless luxury guest personalization, positioning Red Sea Global as the world’s most advanced digital eco-resort.',
+      estimatedContractValue: '$150,000 implementation + $8,000/month recurring SLA',
+    },
+    personalizedEmail: {
+      subject: 'Red Sea Global: Sovereign AI Guest Orchestration for Vision 2030 Luxury Destinations',
+      personalizedHook: 'The opening of St. Regis Red Sea and Nujuma Ritz-Carlton Reserve represents a historic milestone for Saudi luxury tourism.',
+      body: `Dear Mr. Pagano,\n\nRed Sea Global’s commitment to pioneering regenerative luxury while honoring the natural ecosystem of the Kingdom is truly inspiring.\n\nTo complement your world-class architecture, we engineered an autonomous Guest Experience Orchestration Agent designed for multi-island luxury ecosystems. It handles personalized dive planning, yacht transfers, private dining, and eco-guidelines in fluent Arabic, English, and French—fully localized and compliant with KSA Data Sovereignty (PDPL) regulations.\n\nWe have prepared an executive concept brief on autonomous guest journey orchestration for ultra-luxury island resorts. May we forward this 3-page brief for your innovation leadership team to inspect?\n\nRespectfully,\n[Executive Signature]\nAgent 03 Global Intelligence`,
+      callToAction: 'Offer 3-page executive concept brief on KSA sovereign resort AI.',
+    },
+    nextSalesAction: {
+      action: 'Stage concept brief for CEO human sign-off; route inquiry to Innovation & Technology Director at Red Sea Global.',
+      targetDate: '2026-11-10',
+      urgency: 'Medium',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Executive briefing regarding sovereign guest orchestration.',
+        templateSnippet: 'Red Sea Global: Sovereign AI Guest Orchestration for Vision 2030 Luxury Destinations',
+      },
+      {
+        day: 7,
+        channel: 'Follow-up Email',
+        objective: 'Follow up with compliance overview on Saudi PDPL and on-premise LLM deployment.',
+        templateSnippet: 'Sharing our architectural note on in-Kingdom data residency for guest concierge systems...',
+      }
+    ],
+    status: 'PROSPECTED',
+    fitScore: 92,
+    campaignTag: 'Saudi Vision 2030 Hospitality AI',
+    createdAt: '2026-11-06T09:30:00Z',
+    lastUpdated: '2026-11-06T09:45:00Z',
+  },
+  {
+    id: 'prospect-katara-qatar',
+    companyName: 'Katara Hospitality',
+    market: 'Qatar',
+    industry: 'Hotels and resorts',
+    pipelineStage: 'Research',
+    website: 'https://www.katarahospitality.com',
+    headquarters: 'Marina Twin Towers, Lusail City, Doha, Qatar',
+    businessSummary: 'Global hotel owner, developer, and operator based in Qatar with over 50 years of experience, owning flagship landmark properties such as Raffles and Fairmont Doha (Katara Towers), The Ritz-Carlton Doha, and iconic European properties like The Savoy London.',
+    potentialNeeds: [
+      'Omnichannel VIP concierge across luxury hotel suites, yachts, and private residences in Lusail Marina.',
+      'Integration between hotel PMS and fine dining reservation networks without staff friction.',
+      '24/7 guest communications in Arabic, English, French, and Japanese.'
+    ],
+    publicContact: {
+      corporateEmail: 'info@katarahospitality.com',
+      phone: '+974 4423 7777',
+      hqAddress: 'Katara Hospitality HQ, Marina District, Lusail, Qatar',
+      contactPageUrl: 'https://www.katarahospitality.com/contact-us/',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'Nasser Matar Al-Kawari',
+      role: 'Chief Executive Officer',
+      department: 'Executive Leadership',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'White-Label Luxury Hotel Portfolio AI Agent',
+      valueProposition: 'Portfolio-wide conversational AI guest attendant deployed across iconic Katara properties in Doha and Europe, boosting guest ancillary spend by 22%.',
+      expectedRoi: 'Higher guest satisfaction scores and substantial reduction in night shift telephone wait times.',
+      estimatedContractValue: '$60,000 setup + $5,000/month recurring',
+    },
+    personalizedEmail: {
+      subject: 'Katara Towers: AI Concierge Architecture for Raffles & Fairmont Doha',
+      personalizedHook: 'Katara Towers has established Lusail as a global benchmark in architectural hospitality.',
+      body: `Dear Mr. Al-Kawari,\n\nThe landmark Katara Towers stands as an iconic testament to Qatari hospitality excellence.\n\nTo match this world-class caliber, we developed a white-label Autonomous Suite Concierge capable of understanding nuanced guest requests—from bespoke falconry and desert excursions to private yacht charters and Michelin-starred table reservations.\n\nThe system operates seamlessly on WhatsApp and in-room tablets in native Arabic, English, and French with zero lag.\n\nCould we share a 60-second video demonstrating the Katara Towers mock concierge handling complex VIP itineraries?\n\nWarm regards,\n[Executive Signature]\nAgent 03 B2B Group`,
+      callToAction: 'Requesting permission to share a 60-second video demo.',
+    },
+    nextSalesAction: {
+      action: 'Prepare localized Arabic/English pitch deck and submit for CEO human authorization.',
+      targetDate: '2026-11-12',
+      urgency: 'Medium',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Personalized introductory email with Katara Towers custom simulation.',
+        templateSnippet: 'Katara Towers: AI Concierge Architecture for Raffles & Fairmont Doha',
+      },
+      {
+        day: 6,
+        channel: 'Follow-up Email',
+        objective: 'Follow up on ancillary revenue generation from spa & private dining bookings.',
+        templateSnippet: 'Brief follow-up highlighting ancillary guest spend uplift in 5-star Doha suites...',
+      }
+    ],
+    status: 'PROSPECTED',
+    fitScore: 90,
+    campaignTag: 'Qatar Luxury Tourism & Hospitality',
+    createdAt: '2026-11-06T09:45:00Z',
+    lastUpdated: '2026-11-06T10:00:00Z',
+  },
+  {
+    id: 'prospect-pestana-portugal',
+    companyName: 'Pestana Hotel Group',
+    market: 'Portugal',
+    industry: 'Hotels and resorts',
+    pipelineStage: 'In Discussion',
+    website: 'https://www.pestana.com',
+    headquarters: 'Lisboa, Portugal',
+    businessSummary: 'The largest multinational hospitality group of Portuguese origin, operating over 100 hotels across 16 countries in Europe, the Americas, and Africa, including Pestana CR7 Lifestyle Hotels, Pestana Collection, and Pousadas de Portugal.',
+    potentialNeeds: [
+      'Alleviate chronic multilingual front-desk labor shortages across Algarve, Madeira, and Lisbon during peak summer seasons.',
+      'Drive direct website and WhatsApp bookings to counter OTA commission margins (15%-20%).',
+      'Unified FAQ and guest assistant across historic Pousadas de Portugal.'
+    ],
+    publicContact: {
+      corporateEmail: 'guest.service@pestana.com',
+      phone: '+351 210 158 100',
+      hqAddress: 'Rua Jau 54, 1300-314 Lisboa, Portugal',
+      contactPageUrl: 'https://www.pestana.com/pt/contents/contactos',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'José Theotónio',
+      role: 'Chief Executive Officer (CEO)',
+      department: 'Executive Board',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Turnkey WhatsApp & Voice Front-Desk Copilot (PRR Co-Funded Eligible)',
+      valueProposition: 'Multilingual conversational AI agent answering room availability, local check-in guidance, and direct booking in 12 languages 24/7. Fully eligible for Portugal 2030 / PRR digital transition vouchers.',
+      expectedRoi: 'Eliminates 70% of routine reception phone calls while recapturing €120k+ in direct reservations.',
+      estimatedContractValue: '€3,500/month retainer + €15,000 implementation (funded up to 75% via PRR)',
+    },
+    personalizedEmail: {
+      subject: 'Pestana Hotels: Agente Concierge WhatsApp 24/7 elegível para Comparticipação PRR',
+      personalizedHook: 'Reconhecemos a vossa liderança nacional e a crescente procura internacional nas Pousadas e hotéis do Algarve.',
+      body: `Exmo. Dr. José Theotónio,\n\nCom o contínuo crescimento do turismo internacional em Portugal e a escassez de rececionistas poliglotas nos turnos noturnos, desenvolvemos uma solução de Agente de IA para Hotelaria que atende hóspedes em 12 idiomas no WhatsApp e Web.\n\nA nossa solução liga-se ao vosso motor de reservas para converter pedidos diretos sem comissões de 18% da Booking.com e pode ser financiada até 75% a fundo perdido através dos vouchers de transição digital do PRR / Portugal 2030.\n\nCriámos uma demonstração interativa de 60 segundos com o catálogo do Pestana Palace. Posso enviar o link para o vosso Diretor de TI e Comercial avaliar?\n\nCom os melhores cumprimentos,\n[Assinatura Executiva]\nAgente 03 Prospeção B2B`,
+      callToAction: 'Proposta de envio de link de demonstração interativa de 60 segundos.',
+    },
+    nextSalesAction: {
+      action: 'Apresentar draft de email ao CEO/Gestor Humano para aprovação formal antes de envio aos diretores comerciais do Grupo Pestana.',
+      targetDate: '2026-11-07',
+      urgency: 'Immediate',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Email personalizado de introdução com demonstração rápida e menção a vouchers PRR.',
+        templateSnippet: 'Pestana Hotels: Agente Concierge WhatsApp 24/7 elegível para Comparticipação PRR',
+      },
+      {
+        day: 4,
+        channel: 'Follow-up Email',
+        objective: 'Simulação de poupança de comissões de OTA em reservas diretas.',
+        subject: 'Pestana Hotels: Simulação de poupança de comissões OTA via WhatsApp',
+        templateSnippet: 'Partilhamos uma simulação rápida de como recuperar €8.500/mês por unidade hoteleira...',
+      }
+    ],
+    status: 'OUTREACH_STAGED',
+    fitScore: 97,
+    campaignTag: 'Portugal Hospitality AI Modernization',
+    createdAt: '2026-11-06T10:00:00Z',
+    lastUpdated: '2026-11-06T10:15:00Z',
+  },
+  {
+    id: 'prospect-quintela-penalva',
+    companyName: 'Quintela + Penalva | Knight Frank',
+    market: 'Portugal',
+    industry: 'Real estate',
+    pipelineStage: 'Contacted',
+    website: 'https://www.quintelaepenalva.pt',
+    headquarters: 'Lisboa, Cascais e Porto, Portugal',
+    businessSummary: 'Prime luxury real estate agency in Portugal associated with Knight Frank, specializing in high-net-worth real estate transactions across Lisbon, Cascais, Estoril, Comporta, and Porto.',
+    potentialNeeds: [
+      'Ultra-fast qualification of international high-net-worth buyers submitting leads on Idealista and luxury portals.',
+      'Automated scheduling of private property viewings directly on the assigned luxury consultant’s calendar.',
+      'Bilingual French/English/Portuguese response to avoid buyer churn to competing agencies.'
+    ],
+    publicContact: {
+      corporateEmail: 'geral@quintelaepenalva.pt',
+      phone: '+351 213 223 960',
+      hqAddress: 'Rua do Alecrim 10, 1200-017 Lisboa, Portugal',
+      contactPageUrl: 'https://www.quintelaepenalva.pt/contactos/',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'Francisco Quintela',
+      role: 'Managing Partner & Founder',
+      department: 'Executive Leadership & Luxury Sales',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Prime Real Estate 30-Second Lead Qualifier & Viewing Coordinator',
+      valueProposition: 'Instant autonomous WhatsApp qualification for high-ticket Cascais/Lisboa properties that verifies buyer timeline and funds in under 30 seconds before booking a video or in-person consultation.',
+      expectedRoi: 'Captures high-net-worth international buyers who inquire outside Portuguese business hours; eliminates lost deals.',
+      estimatedContractValue: '€1,200/month retainer + €3,500 setup',
+    },
+    personalizedEmail: {
+      subject: 'Quintela + Penalva: Resposta a Compradores Internacionais em 30s no WhatsApp',
+      personalizedHook: 'A liderança da Quintela + Penalva no segmento Prime em Cascais e Lisboa atrai clientes exigentes dos EUA, Reino Unido e França.',
+      body: `Estimado Dr. Francisco Quintela,\n\nA Quintela + Penalva é a referência incontornável no imobiliário prime português.\n\nSabemos que compradores internacionais de elevado património frequentemente submetem pedidos às 23h. Estudos demonstram que responder nos primeiros 3 minutos aumenta a probabilidade de visita qualificada em mais de 20x.\n\nDesenvolvemos um agente de IA especializado que responde no WhatsApp em menos de 30 segundos, qualifica o perfil do investidor de forma elegante e agenda diretamente a visita no calendário do consultor responsável.\n\nPreparámos uma simulação de 45 segundos adaptada a um imóvel de luxo da vossa carteira em Cascais. Teria 5 minutos para avaliar a demonstração esta semana?\n\nCom os melhores cumprimentos,\n[Assinatura Executiva]\nAgente 03 Prospeção B2B`,
+      callToAction: 'Proposta de visualização de simulação de 45 segundos.',
+    },
+    nextSalesAction: {
+      action: 'Enviar draft de mensagem para aprovação do utilizador; enviar convite executivo para Francisco Quintela.',
+      targetDate: '2026-11-08',
+      urgency: 'High',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Email de introdução personalizado com simulação para imóvel prime de Cascais.',
+        templateSnippet: 'Quintela + Penalva: Resposta a Compradores Internacionais em 30s no WhatsApp',
+      },
+      {
+        day: 5,
+        channel: 'Follow-up Email',
+        objective: 'Estudo de caso APEMIP sobre tempos de conversão no imobiliário de luxo.',
+        templateSnippet: 'Partilhamos dados sobre como reduzir o tempo de resposta aumentou o fecho de clientes estrangeiros...',
+      }
+    ],
+    status: 'OUTREACH_STAGED',
+    fitScore: 95,
+    campaignTag: 'Iberian Prime Real Estate AI',
+    createdAt: '2026-11-06T10:15:00Z',
+    lastUpdated: '2026-11-06T10:30:00Z',
+  },
+  {
+    id: 'prospect-maybourne-uk',
+    companyName: 'Maybourne Hotel Group',
+    market: 'United Kingdom',
+    industry: 'Hotels and resorts',
+    pipelineStage: 'Research',
+    website: 'https://www.maybourne.com',
+    headquarters: 'Mayfair, London, United Kingdom',
+    businessSummary: 'Ultra-luxury hospitality group owning and operating London’s most legendary hotels: Claridge’s, The Connaught, and The Berkeley, alongside The Maybourne Beverly Hills and The Maybourne Riviera.',
+    potentialNeeds: [
+      'High-touch VIP guest inquiries requiring instantaneous, flawless English, Arabic, and French etiquette.',
+      'Private suite service & afternoon tea reservations handling extreme weekend demand peaks.',
+      'Sovereign enterprise privacy guaranteeing ultra-HNW guest data confidentiality.'
+    ],
+    publicContact: {
+      corporateEmail: 'info@maybourne.com',
+      phone: '+44 (0)20 7107 8850',
+      hqAddress: 'Claridge’s, Brook Street, Mayfair, London W1K 4HR, UK',
+      contactPageUrl: 'https://www.maybourne.com/contact-us/',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'Roland Fasel',
+      role: 'Chief Operating Officer (COO)',
+      department: 'Executive Operations',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Ultra-Luxury Private Hospitality AI Concierge',
+      valueProposition: 'Private on-premise luxury AI attendant reflecting the historic heritage and bespoke tone of Claridge’s and The Connaught, handling guest requests with zero latency and complete discretion.',
+      expectedRoi: 'Eliminates phone queue abandonment for dining and afternoon tea while maintaining signature white-glove etiquette.',
+      estimatedContractValue: '£4,500/month retainer + £20,000 deployment fee',
+    },
+    personalizedEmail: {
+      subject: 'Claridge’s & The Connaught: Bespoke Digital Butler Prototype for UHNW Guests',
+      personalizedHook: 'The timeless standard of hospitality at Claridge’s and The Connaught remains the benchmark of global luxury.',
+      body: `Dear Mr. Fasel,\n\nThe legendary reputation of Maybourne properties in Mayfair represents the highest echelon of personal service.\n\nFor ultra-high-net-worth guests traveling from the Gulf, North America, and Europe, immediate mobile responsiveness is now expected alongside physical white-glove care. We developed an autonomous Private Hospitality Concierge trained specifically on high-etiquette English, French, and Arabic.\n\nThe agent seamlessly coordinates private suite requests, chauffeur transfers, and Claridge’s Afternoon Tea reservations directly via encrypted messaging—integrating directly with your PMS under strict UK-GDPR confidentiality protocols.\n\nWe have prepared a private 60-second prototype demonstrating this bespoke tone. May we share this discreet demonstration with your guest services leadership?\n\nYours sincerely,\n[Executive Signature]\nAgent 03 Global Intelligence Group`,
+      callToAction: 'Requesting permission to share a private 60-second discreet demonstration.',
+    },
+    nextSalesAction: {
+      action: 'Stage outreach email for human executive approval before reaching out to Maybourne operations director.',
+      targetDate: '2026-11-11',
+      urgency: 'Medium',
+      requiresHumanApproval: true,
+    },
+    followUpStrategy: [
+      {
+        day: 1,
+        channel: 'Email',
+        objective: 'Initial commercial email highlighting bespoke tone and UHNW guest discretion.',
+        templateSnippet: 'Claridge’s & The Connaught: Bespoke Digital Butler Prototype for UHNW Guests',
+      },
+      {
+        day: 6,
+        channel: 'Follow-up Email',
+        objective: 'Privacy & UK GDPR security architectural overview.',
+        templateSnippet: 'Sharing an architectural note on how our concierge ensures complete guest data privacy...',
+      }
+    ],
+    status: 'PROSPECTED',
+    fitScore: 91,
+    campaignTag: 'UK Luxury Hospitality Outbound',
+    createdAt: '2026-11-06T10:30:00Z',
+    lastUpdated: '2026-11-06T10:45:00Z',
+  },
+  {
+    id: 'prospect-vila-gale',
+    companyName: 'Vila Galé Hotéis',
+    market: 'Portugal',
+    industry: 'Hotels and resorts',
+    pipelineStage: 'Closed/Won',
+    website: 'https://www.vilagale.com',
+    headquarters: 'Oeiras / Lisboa, Portugal',
+    businessSummary: 'Second largest Portuguese hotel group with over 40 resort properties across Portugal and Brazil, celebrated for family resorts, agro-tourism vineyards, and coastal retreats.',
+    potentialNeeds: [
+      'Automated high-season guest inquiries across WhatsApp for pool, spa, and dining packages.',
+      'Bilingual support in Portuguese, Spanish, and English.'
+    ],
+    publicContact: {
+      corporateEmail: 'portugal.reservas@vilagale.com',
+      phone: '+351 217 907 610',
+      hqAddress: 'Rua Frei Carlos 8, 1600-095 Lisboa, Portugal',
+      contactPageUrl: 'https://www.vilagale.com/pt/contactos',
+      verifiedOnWeb: true,
+    },
+    decisionMaker: {
+      name: 'Gonçalo Rebelo de Almeida',
+      role: 'CEO & Board Member',
+      department: 'Executive Operations',
+      confidenceScore: 'VERIFIED',
+    },
+    matchingSolution: {
+      productName: 'Turnkey Resort AI Guest Copilot',
+      valueProposition: 'Automated WhatsApp front-desk concierge managing guest inquiries, dining bookings, and wine tastings across resort properties.',
+      expectedRoi: 'Eliminates 65% of front-desk routine calls; direct booking conversion uplift of 14%.',
+      estimatedContractValue: '€3,200/month recurring retainer',
+    },
+    personalizedEmail: {
+      subject: 'Vila Galé: Ativação Piloto Concluída — Agente Concierge WhatsApp',
+      personalizedHook: 'Parceria formalizada para implementação nas 4 unidades piloto no Algarve e Alentejo.',
+      body: `Caro Dr. Gonçalo,\n\nConforme acordado no nosso Master Services Agreement, concluímos a integração dos webhooks com o PMS para as unidades Vila Galé Cerro Alagoa, Ampalius e Clube de Campo.\n\nO agente está ativo em modo de produção assistida para atendimento aos hóspedes.\n\nCom os melhores cumprimentos,\n[Assinatura Executiva]`,
+      callToAction: 'Reunião quinzenal de monitorização de KPIs.',
+    },
+    nextSalesAction: {
+      action: 'Acompanhar relatório mensal de conversão de reservas diretas e propor expansão para mais 8 unidades no Norte de Portugal e Brasil.',
+      targetDate: '2026-11-20',
+      urgency: 'Medium',
+      requiresHumanApproval: false,
+    },
+    followUpStrategy: [
+      {
+        day: 14,
+        channel: 'Phone/WhatsApp',
+        objective: 'Revisão quinzenal de métricas de conversão direta de quartos.',
+        templateSnippet: 'Reunião de acompanhamento de KPIs de reservas diretas...',
+      }
+    ],
+    status: 'CLOSED_WON',
+    fitScore: 98,
+    campaignTag: 'Portugal Hospitality AI Modernization',
+    createdAt: '2026-10-15T09:00:00Z',
+    lastUpdated: '2026-11-06T08:00:00Z',
+  }
+];
+
+export const SEED_CAMPAIGNS: CampaignCadence[] = [
+  {
+    id: 'camp-gcc-luxury-hospitality',
+    name: 'Dubai & GCC Luxury Hospitality AI Inbound',
+    targetMarket: 'Dubai, UAE',
+    targetIndustry: 'Hotels and resorts',
+    offeredProduct: 'Enterprise Sovereign Multilingual Concierge & Direct Booking Agent',
+    prospectCount: 4,
+    steps: [
+      {
+        stepNumber: 1,
+        delayDays: 0,
+        title: 'Initial Personalized Value Hook',
+        channel: 'Email',
+        contentOutline: 'Focus on 45-second VIP guest response, multilingual fluency (Arabic/Russian/English), and saving 18% OTA commission.',
+      },
+      {
+        stepNumber: 2,
+        delayDays: 4,
+        title: 'Interactive Prototype Video Demo',
+        channel: 'Follow-up Email',
+        contentOutline: 'Share a 60-second screen capture demonstrating WhatsApp room booking and dining confirmation with Opera PMS integration.',
+      },
+      {
+        stepNumber: 3,
+        delayDays: 8,
+        title: 'Executive LinkedIn Touchpoint',
+        channel: 'LinkedIn',
+        contentOutline: 'Connect with COO / Head of Hospitality referencing the tailored prototype and offering an executive pilot.',
+      }
+    ],
+    status: 'ACTIVE',
+  },
+  {
+    id: 'camp-portugal-prr-hospitality',
+    name: 'Portugal Tourism & Hospitality PRR Acceleration',
+    targetMarket: 'Portugal',
+    targetIndustry: 'Hotels and resorts',
+    offeredProduct: 'Turnkey WhatsApp & Voice Front-Desk Copilot (PRR Co-Funded Eligible)',
+    prospectCount: 6,
+    steps: [
+      {
+        stepNumber: 1,
+        delayDays: 0,
+        title: 'PRR Voucher Subsidy & Night Shift Relief',
+        channel: 'Email',
+        contentOutline: 'Highlight solving the chronic receptionist shortage while leveraging 75%-100% non-repayable PRR vouchers.',
+      },
+      {
+        stepNumber: 2,
+        delayDays: 4,
+        title: 'OTA Commission Leakage Calculator',
+        channel: 'Follow-up Email',
+        contentOutline: 'Demonstrate monthly recaptured direct bookings vs 18% Booking.com commissions.',
+      },
+      {
+        stepNumber: 3,
+        delayDays: 9,
+        title: 'Direct Pilot Activation',
+        channel: 'Phone/WhatsApp',
+        contentOutline: '10-minute briefing call with General Manager to activate pilot in 14 days.',
+      }
+    ],
+    status: 'ACTIVE',
+  },
+  {
+    id: 'camp-realestate-lead-qualifier',
+    name: 'Iberian & Dubai High-Ticket Real Estate Fast-Response',
+    targetMarket: 'Real estate' as any,
+    targetIndustry: 'Real estate',
+    offeredProduct: 'Autonomous Real Estate Lead Qualification & Booking Agent',
+    prospectCount: 5,
+    steps: [
+      {
+        stepNumber: 1,
+        delayDays: 0,
+        title: 'Sub-60s International Lead Response',
+        channel: 'Email',
+        contentOutline: 'Address the drop-off when foreign buyers submit leads outside local hours; demonstrate 30-second WhatsApp qualification.',
+      },
+      {
+        stepNumber: 2,
+        delayDays: 5,
+        title: 'Golden Visa & Capital Verification Flow',
+        channel: 'Follow-up Email',
+        contentOutline: 'Demonstrate automated net-worth and payment schedule qualification before booking viewing.',
+      }
+    ],
+    status: 'ACTIVE',
+  }
+];

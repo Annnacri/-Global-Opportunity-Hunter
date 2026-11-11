@@ -1,0 +1,6 @@
+{
+  "name": "Agent 03: Global Opportunity Hunter",
+  "description": "Autonomous market intelligence and business opportunity research agent reporting to the CEO Agent, identifying and evaluating high-revenue opportunities across Portugal and global markets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
